@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset='utf-8' />
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--BOOTSTRAP-->
+
+	<link rel="stylesheet" type="text/css" href="kika1.css"> <!--MY CSS STYLE-->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> <!--Font Awesome-->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <!--JQUERY-->
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> <!--JAVASCRIPT-->
+  <script type="text/javascript" src="kika.js" defer ></script> <!-- JAVASCRIP FOR THE LIGHTBOX -->
+
+	
+	<title>Kika Dardot Photography</title>
+
+	<link rel="shortcut icon" href="images/index/shortIcon.png">
+</head>
+<body class="portfolio">
+
+	<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" style="background-color: rgb(179,177,176,0.5);">
+	<div class="container-fluid">
+  		<a class="navbar-brand" href="index.html"><img id="navbarLogo" src="images/home/logo2.png"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+  <div class="collapse navbar-collapse" id="collapsar">
+    <ul class="navbar-nav  mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home <i class="fas fa-home"></i><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio <i class="far fa-folder"> </i></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="portraits.html">Portraits</a>
+          <a class="dropdown-item" href="events.html">Events</a>
+          <a class="dropdown-item" href="urban.html">Urban shots</a>
+          <a class="dropdown-item" href="experiments.html">Experiments</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="home.html#about">About <i class="far fa-user"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="home.html#contact">Contact <i class="far fa-envelope-open"></i></a>
+      </li>
+    </ul>
+    
+   <!--  <ul class="nav navbar-nav navbar-right">
+      
+    </ul> -->
+  </div>
+</div>
+</nav>
+<div id="wrapper">
+<img class="portImage" src="images/portfolio/portrait/port1s.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+<img class="portImage" src="images/portfolio/portrait/port2s.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+<img class="portImage" src="images/portfolio/portrait/port3s.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+
+<img class="portImage" src="images/portfolio/portrait/port4s.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+<img class="portImage" src="images/portfolio/portrait/port5s.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+<img class="portImage" src="images/portfolio/portrait/port6s.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+
+<img class="portImage" src="images/portfolio/portrait/port7s.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+<img class="portImage" src="images/portfolio/portrait/port8s.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+<img class="portImage" src="images/portfolio/portrait/port9s.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+      <img src="images/portfolio/portrait/port1s.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+      <img src="images/portfolio/portrait/port2s.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+      <img src="images/portfolio/portrait/port3s.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+      <img src="images/portfolio/portrait/port4s.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 9</div>
+      <img src="images/portfolio/portrait/port5s.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+      <img src="images/portfolio/portrait/port6s.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 9</div>
+      <img src="images/portfolio/portrait/port7s.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 9</div>
+      <img src="images/portfolio/portrait/port8s.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 9</div>
+      <img src="images/portfolio/portrait/port9s.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <!-- <div class="column">
+      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(5)" alt="Lights">
+    </div>
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(6)" alt="Lights">
+    </div>
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(7)" alt="Lights">
+    </div>
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(8)" alt="Lights">
+    </div>
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(9)" alt="Lights">
+    </div> -->
+  </div>
+</div>
+
+
+
+
+
+
+</body>
+<footer><i>&copy;Copyright 2019 Kika Dardot Photography. Vancouver, BC. Canada. </i></footer>
+</html>
